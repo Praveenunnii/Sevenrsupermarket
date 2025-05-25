@@ -1,0 +1,27 @@
+<suite name="selemiumProject">
+	<listeners>
+		<listener
+			class-name="com.sevenrmartsupermarket.listeners.ExtendReporter"></listener>
+	</listeners>
+	<test name="TestByGroup">
+	<groups>
+	<run>
+	<include name="login"></include>	
+	<include name="invalidlogin"></include>
+	<include name="adminpage"></include>
+	<include name="addnewuser"></include>
+	</run>
+	</groups>
+	<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.sevenrmartsupermarket.tests.LoginTest">
+			</class>
+					
+			<class name="com.sevenrmartsupermarket.tests.DashBoardTest">
+			</class>
+
+		</classes>
+
+	</test>
+	
+</suite>

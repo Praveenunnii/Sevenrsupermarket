@@ -1,0 +1,25 @@
+<suite name="MultiBrowserTesting" thread-count="10" parallel="tests">
+	<listeners>
+		<listener
+			class-name="com.sevenrmartsupermarket.listeners.ExtendReporter"></listener>
+	</listeners>
+	<test name="ChromeLoginTestCase">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.sevenrmartsupermarket.tests.LoginTest">
+
+			</class>
+
+		</classes>
+
+	</test>
+	<test name="EdgeLoginTestCase">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="com.sevenrmartsupermarket.tests.LoginTest">
+
+			</class>
+
+		</classes>
+	</test>
+</suite>
