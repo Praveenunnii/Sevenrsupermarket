@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse--1396116385\testng-customsuite.xml</span>
+                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse--1657846507\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.sevenrmartsupermarket.tests.DashBoardTest" class="method navigator-link" hash-for-method="verifyAbleToDeleteUser">verifyAbleToDeleteUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.sevenrmartsupermarket.tests.AdminUsersTest" class="method navigator-link" hash-for-method="verifyAbleToAddNewUserFromExcel">verifyAbleToAddNewUserFromExcel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,37 +122,17 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.sevenrmartsupermarket.tests.DashBoardTest</span>
+              <span class="class-name">com.sevenrmartsupermarket.tests.AdminUsersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAbleToDeleteUser">
-                  </a> <!-- verifyAbleToDeleteUser -->
-                  <span class="method-name">verifyAbleToDeleteUser</span>
-                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Do you want to delete this User?}
-  (Session info: chrome=136.0.7103.114): Do you want to delete this User?
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [696a18b58801f2a9433d76ee7d1c007a, findElement {value=//div[@class=&apos;alert alert-success alert-dismissible&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60995/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 696a18b58801f2a9433d76ee7d1c007a
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.getText(Unknown Source)
-	at com.sevenrmartsupermarket.pages.DashBoardPage.getDeleteSuccessAlertMessage(DashBoardPage.java:84)
-	at com.sevenrmartsupermarket.tests.DashBoardTest.verifyAbleToDeleteUser(DashBoardTest.java:55)
+                  <a name="verifyAbleToAddNewUserFromExcel">
+                  </a> <!-- verifyAbleToAddNewUserFromExcel -->
+                  <span class="method-name">verifyAbleToAddNewUserFromExcel</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)&quot; because &quot;this.sheet&quot; is null
+	at com.sevenrmartsupermarket.utilities.ExcelReader.getCellData(ExcelReader.java:33)
+	at com.sevenrmartsupermarket.tests.AdminUsersTest.verifyAbleToAddNewUserFromExcel(AdminUsersTest.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -188,7 +168,7 @@ Session ID: 696a18b58801f2a9433d76ee7d1c007a
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse--1396116385\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse--1657846507\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,11 +177,11 @@ Session ID: 696a18b58801f2a9433d76ee7d1c007a
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.sevenrmartsupermarket.tests.DashBoardTest&quot;&gt;
+      &lt;class name=&quot;com.sevenrmartsupermarket.tests.AdminUsersTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyAbleToDeleteUser&quot;/&gt;
+          &lt;include name=&quot;verifyAbleToAddNewUserFromExcel&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.sevenrmartsupermarket.tests.DashBoardTest --&gt;
+      &lt;/class&gt; &lt;!-- com.sevenrmartsupermarket.tests.AdminUsersTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -243,9 +223,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAbleToDeleteUser')
-data.setCell(0, 2, 'com.sevenrmartsupermarket.tests.DashBoardTest')
-data.setCell(0, 3, 1433);
+data.setCell(0, 1, 'verifyAbleToAddNewUserFromExcel')
+data.setCell(0, 2, 'com.sevenrmartsupermarket.tests.AdminUsersTest')
+data.setCell(0, 3, 1412);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -265,14 +245,12 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.sevenrmartsupermarket.tests.DashBoardTest</span>
+              <span class="ignored-class-name">com.sevenrmartsupermarket.tests.AdminUsersTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyMoreInfoIsClickable</span>
-                <br/>
                 <span class="ignored-method-name">verifyAbletoAddNewUser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -285,7 +263,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.DashBoardTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.AdminUsersTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
                 <span class="method-start">0 ms</span>
@@ -293,14 +271,14 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyAbleToDeleteUser</span>
-                <span class="method-start">4131 ms</span>
+                <span class="method-name">verifyAbleToAddNewUserFromExcel</span>
+                <span class="method-start">5187 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">terminationSession([TestResult name=verifyAbleToDeleteUser status=FAILURE method=DashBoardTest.verifyAbleToDeleteUser()...)</span>
-                <span class="method-start">5573 ms</span>
+                <span class="method-name">terminationSession([TestResult name=verifyAbleToAddNewUserFromExcel status=FAILURE method=AdminUsersTest.verifyAbleToAd...)</span>
+                <span class="method-start">6606 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

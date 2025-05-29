@@ -62,13 +62,14 @@ public class LoginPage {
 		clickOnSignInButton();
 	}
 	
-	public void login()
+	public DashBoardPage login()
 	{
 		String userName = properties.getProperty("username");
 		String password = properties.getProperty("password");
 		enterUserName(userName);
 		enterPassword(password);
 		clickOnSignInButton();
+		return new DashBoardPage(driver);
 	}		
 	
 	public void inValidLogin()
@@ -80,8 +81,8 @@ public class LoginPage {
 		clickOnSignInButton();
 	}
 	
-	public String alertMessage()
-			{
-		       return inValidLoginAlert.getText();
-			}
+	public boolean inValidAlertMessage() {
+		boolean message = inValidLoginAlert.getText().contains("Invalid Username/Password");
+		return message;
+	}
 }

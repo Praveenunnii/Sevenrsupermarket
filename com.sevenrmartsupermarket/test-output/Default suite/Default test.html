@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun May 25 16:51:36 IST 2025</td>
+<td>Started on:</td><td>Thu May 29 06:51:54 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5621 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6659 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,7 +75,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.sevenrmartsupermarket.tests.DashBoardTest.terminationSession()'><b>terminationSession</b><br>Test class: com.sevenrmartsupermarket.tests.DashBoardTest<br>Parameters: [TestResult name=verifyAbleToDeleteUser status=FAILURE method=DashBoardTest.verifyAbleToDeleteUser()[pri:0, instance:com.sevenrmartsupermarket.tests.DashBoardTest@7c7b252e] output={null}]</td>
+<td title='com.sevenrmartsupermarket.tests.AdminUsersTest.terminationSession()'><b>terminationSession</b><br>Test class: com.sevenrmartsupermarket.tests.AdminUsersTest<br>Parameters: [TestResult name=verifyAbleToAddNewUserFromExcel status=FAILURE method=AdminUsersTest.verifyAbleToAddNewUserFromExcel()[pri:0, instance:com.sevenrmartsupermarket.tests.AdminUsersTest@7c7b252e] output={null}]</td>
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.sevenrmartsupermarket.utilities.CaptureScreenshots.takeScreenShot(org.openqa.selenium.WebDriver, String)&quot; because &quot;this.capturescreenshots&quot; is null
 	at com.sevenrmartsupermarket.base.Base.terminationSession(Base.java:83)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -109,8 +109,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace56510351", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace56510351'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.sevenrmartsupermarket.utilities.CaptureScreenshots.takeScreenShot(org.openqa.selenium.WebDriver, String)&quot; because &quot;this.capturescreenshots&quot; is null
+</pre></div><a href='#' onClick='toggleBox("stack-trace159917166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace159917166'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.sevenrmartsupermarket.utilities.CaptureScreenshots.takeScreenShot(org.openqa.selenium.WebDriver, String)&quot; because &quot;this.capturescreenshots&quot; is null
 	at com.sevenrmartsupermarket.base.Base.terminationSession(Base.java:83)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -145,7 +145,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.sevenrmartsupermarket.tests.DashBoardTest@7c7b252e</td></tr>
+<td>com.sevenrmartsupermarket.tests.AdminUsersTest@7c7b252e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -155,30 +155,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.sevenrmartsupermarket.tests.DashBoardTest.verifyAbleToDeleteUser()'><b>verifyAbleToDeleteUser</b><br>Test class: com.sevenrmartsupermarket.tests.DashBoardTest</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Do you want to delete this User?}
-  (Session info: chrome=136.0.7103.114): Do you want to delete this User?
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [696a18b58801f2a9433d76ee7d1c007a, findElement {value=//div[@class=&apos;alert alert-success alert-dismissible&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60995/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 696a18b58801f2a9433d76ee7d1c007a
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.getText(Unknown Source)
-	at com.sevenrmartsupermarket.pages.DashBoardPage.getDeleteSuccessAlertMessage(DashBoardPage.java:84)
-	at com.sevenrmartsupermarket.tests.DashBoardTest.verifyAbleToDeleteUser(DashBoardTest.java:55)
+<td title='com.sevenrmartsupermarket.tests.AdminUsersTest.verifyAbleToAddNewUserFromExcel()'><b>verifyAbleToAddNewUserFromExcel</b><br>Test class: com.sevenrmartsupermarket.tests.AdminUsersTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)&quot; because &quot;this.sheet&quot; is null
+	at com.sevenrmartsupermarket.utilities.ExcelReader.getCellData(ExcelReader.java:33)
+	at com.sevenrmartsupermarket.tests.AdminUsersTest.verifyAbleToAddNewUserFromExcel(AdminUsersTest.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -205,30 +185,10 @@ Session ID: 696a18b58801f2a9433d76ee7d1c007a
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1101451553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1101451553'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Do you want to delete this User?}
-  (Session info: chrome=136.0.7103.114): Do you want to delete this User?
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [696a18b58801f2a9433d76ee7d1c007a, findElement {value=//div[@class=&apos;alert alert-success alert-dismissible&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60995/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 696a18b58801f2a9433d76ee7d1c007a
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.getText(Unknown Source)
-	at com.sevenrmartsupermarket.pages.DashBoardPage.getDeleteSuccessAlertMessage(DashBoardPage.java:84)
-	at com.sevenrmartsupermarket.tests.DashBoardTest.verifyAbleToDeleteUser(DashBoardTest.java:55)
+</pre></div><a href='#' onClick='toggleBox("stack-trace32496853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32496853'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)&quot; because &quot;this.sheet&quot; is null
+	at com.sevenrmartsupermarket.utilities.ExcelReader.getCellData(ExcelReader.java:33)
+	at com.sevenrmartsupermarket.tests.AdminUsersTest.verifyAbleToAddNewUserFromExcel(AdminUsersTest.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -257,7 +217,7 @@ Session ID: 696a18b58801f2a9433d76ee7d1c007a
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>1</td>
-<td>com.sevenrmartsupermarket.tests.DashBoardTest@7c7b252e</td></tr>
+<td>com.sevenrmartsupermarket.tests.AdminUsersTest@7c7b252e</td></tr>
 </table><p>
 </body>
 </html>

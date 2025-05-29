@@ -13,22 +13,14 @@ public class DashBoardPage {
 	WebElement profileName;
 	@FindBy(xpath = ("(//p[text()='Admin Users']//following::a[@class='small-box-footer'])[1]"))
 	WebElement moreInfo;
-	@FindBy(xpath = ("//a[@class='btn btn-rounded btn-danger']"))
-	WebElement newButton;
-	@FindBy(xpath = ("//input[@id='username']"))
-	WebElement userNamefield;
-	@FindBy(xpath = ("//input[@id='password']"))
-	WebElement passwordfield;
-	@FindBy(xpath = ("//select[@id='user_type']"))
-	WebElement userType;
-	@FindBy(xpath = ("(//button[@class='btn btn-block-sm btn-danger'])[2]"))
-	WebElement saveButton;
-	@FindBy(xpath=("//div[@class='alert alert-success alert-dismissible']"))
-	WebElement addSuccessAlertMessage;
-	@FindBy(xpath=("(//i[@class='fas fa-trash-alt'])[1]"))
-	WebElement deleteButton;
-	@FindBy(xpath=("//div[@class='alert alert-success alert-dismissible']"))
-	WebElement deleteSuccessAlertMessage;
+	@FindBy(xpath=("(//p[contains(text(),'Manage News')])[1]"))
+	WebElement manageNewsOption;
+	@FindBy(xpath=("(//a[@class='nav-link'])[2]"))
+	WebElement adminIcon;
+	@FindBy(xpath=("(//a[@class='dropdown-item'])[2]"))
+	WebElement logoutButton;
+	@FindBy(xpath=("//b[contains(text(),'7rmart supermarket')]"))
+	WebElement loginPageHeader;
 
 	public DashBoardPage(WebDriver driver) {
 		this.driver = driver;
@@ -42,46 +34,25 @@ public class DashBoardPage {
 	public void clickOnMoreInfo() {
 		moreInfo.click();
 	}
-
-	public void clickOnNewButton() {
-		newButton.click();
-	}
-
-	public void enterNewUserName(String userName) {
-		userNamefield.sendKeys(userName);
-	}
-
-	public void enterNewPassword(String password) {
-		passwordfield.sendKeys(password);
-	}
-
-	public void selectUserType() {
-		Select select = new Select(userType);
-		select.selectByVisibleText("Admin");
-	}
-
-	public void addNewUser() {
-		String userName = "NewUser123";
-		String password = "password";
-		enterNewUserName(userName);
-		enterNewPassword(password);
-		selectUserType();
-		saveButton.click();
+	
+	public void clickOnManageNewsMenuOption()
+	{
+		manageNewsOption.click();
 	}
 	
-	public String getAddSuccessAlertMessage()
+	public void clickOnAdminIcon()
 	{
-		return addSuccessAlertMessage.getText();
+		adminIcon.click();
 	}
 	
-	public void clickOnDeleteButton()
+	public void clickOnLogoutButton()
 	{
-		deleteButton.click();
+		logoutButton.click();
 	}
 	
-	public String getDeleteSuccessAlertMessage()
+	public String loginPageHeading()
 	{
-		return deleteSuccessAlertMessage.getText();
+		return loginPageHeader.getText();
 	}
 
 }
