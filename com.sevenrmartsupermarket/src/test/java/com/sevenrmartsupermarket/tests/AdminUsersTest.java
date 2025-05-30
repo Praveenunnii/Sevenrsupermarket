@@ -8,6 +8,7 @@ import com.sevenrmartsupermarket.pages.AdminUsersPage;
 import com.sevenrmartsupermarket.pages.DashBoardPage;
 import com.sevenrmartsupermarket.pages.LoginPage;
 import com.sevenrmartsupermarket.utilities.ExcelReader;
+import com.sevenrmartsupermarket.utilities.GeneralUtility;
 
 public class AdminUsersTest extends Base {
 
@@ -38,7 +39,8 @@ public class AdminUsersTest extends Base {
 		excelreader.setExcelFile("AdminUserTestData");
 		String userName = excelreader.getCellData(1, 0);
 		String password = excelreader.getCellData(1, 1);
-		adminuserpage.addNewUser(userName, password);
+		System.out.println(userName);
+		adminuserpage.addNewUser(GeneralUtility.getRandomName(), password);
 		Assert.assertTrue(adminuserpage.getAddSuccessAlertMessage());
 		
 	}
